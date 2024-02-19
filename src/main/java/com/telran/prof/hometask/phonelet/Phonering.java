@@ -1,6 +1,6 @@
 package com.telran.prof.hometask.phonelet;
 
-public class phonering {
+public class Phonering {
 
     public static void main(String[] args) {
 

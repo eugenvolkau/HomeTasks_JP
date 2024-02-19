@@ -3,7 +3,7 @@ package com.telran.prof.hometask.person;
 public class personList {
 
     public static void main(String[] args) {
-        person writer = new person();
+        Person writer = new Person();
         writer.setName("Giuseppe");
         writer.setFullName("Verdi");
         writer.setAge(1813);
@@ -13,7 +13,7 @@ public class personList {
         writer.move(writer.getFullName());
         writer.talk(writer.getFullName());
 
-        person composer = new person("Hanz Hristian", "Andersen", 1805);
+        Person composer = new Person("Hanz Hristian", "Andersen", 1805);
         System.out.println(composer.getName() + "    " + composer.getFullName() +
                 "  was born in  " + composer.getAge());
 
