@@ -2,20 +2,20 @@ package com.telran.prof.hometask.alfabet;
 
 import java.util.Arrays;
 
-class AlphabetGreek extends Alphabet {
+class GreekAlphabet extends Alphabet {
 
     int k = 25;
-    char[] arrchar_Gr = new char[k];
+    char[] chars = new char[k];
 
-    public char[] getArrchar_Gr() {
-        return arrchar_Gr;
+    public char[] getChars() {
+        return chars;
     }
 
     @Override
     public void printAlphabet() {
-        for (int i = 0; i < 25; i++) {
-            arrchar_Gr[i] = (char) (i + 945);
+        for (int i = 0; i < chars.length; i++) {
+            chars[i] = (char) (i + 945);
         }
-        System.out.println(Arrays.toString(arrchar_Gr));
+        System.out.println(Arrays.toString(chars));
     }
 }

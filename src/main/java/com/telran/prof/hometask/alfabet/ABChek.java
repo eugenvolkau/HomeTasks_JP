@@ -9,23 +9,23 @@ public class ABChek {
         Alphabet englishAB = new Alphabet();
         englishAB.setName("English");
         englishAB.printAlphabet();
-        AlphaBet_Eng eng = new AlphaBet_Eng();
+        EnglishAlphsbet eng = new EnglishAlphsbet();
         eng.printAlphabet();
-        printAllInfo(eng.getArrchar_eng());
+        printAllInfo(eng.getChars());
 
         Alphabet deutschAB = new Alphabet();
         deutschAB.setName("Deutsch");
         deutschAB.printAlphabet();
-        Alphabet_De de = new Alphabet_De();
+        DeutschAlphabet de = new DeutschAlphabet();
         de.printAlphabet();
-        printAllInfo(de.getArrchar_De());
+        printAllInfo(de.getChars());
 
         Alphabet greekAB = new Alphabet();
         greekAB.setName("Greek");
         greekAB.printAlphabet();
-        AlphabetGreek gr = new AlphabetGreek();
+        GreekAlphabet gr = new GreekAlphabet();
         gr.printAlphabet();
-        printAllInfo(gr.getArrchar_Gr());
+        printAllInfo(gr.getChars());
 
     }
 
