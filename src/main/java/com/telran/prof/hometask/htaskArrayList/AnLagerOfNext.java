@@ -11,6 +11,7 @@ public class AnLagerOfNext {
     }
 
     public Iterator<String> iterator(){
+
         return new StepByStep();
     }
 
