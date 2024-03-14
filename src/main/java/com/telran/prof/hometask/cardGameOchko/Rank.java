@@ -1,6 +1,6 @@
-package com.telran.prof.hometask.ht_21022024;
+package com.telran.prof.hometask.cardGameOchko;
 
-public enum RankKards {
+public enum Rank {
     TWO,
     THREE,
     FOUR,

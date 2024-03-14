@@ -10,14 +10,14 @@ public class Depots {
     ProdaBook[] books = ProdaBook.values();
     ProdaTech[] teches = ProdaTech.values();
     ArrayList<String> aVALABILITY = new ArrayList<>();
-    List<List<String>> depotIncom = new ArrayList<List<String>>();
+    ArrayList<String> depotIncom = new ArrayList<String>();
     List<String> depotExpense = new ArrayList<>();
 
     public ArrayList<String> getaVALABILITY() {
         return aVALABILITY;
     }
 
-    public List<List<String>> getDepotIncom() {
+    public ArrayList<String> getDepotIncom() {
         return depotIncom;
     }
 
@@ -49,7 +49,7 @@ public class Depots {
     public List<String> depotIncomFirst(List<String> incom,
                                         List<String> capacityAll) {
         for (String unit : incom) {
-            depotIncom.add(Collections.singletonList(unit));
+            depotIncom.add(String.valueOf(Collections.singletonList(unit)));
         }
         System.out.println("The goods have now arrived at the warehouse  ");
         return incom;

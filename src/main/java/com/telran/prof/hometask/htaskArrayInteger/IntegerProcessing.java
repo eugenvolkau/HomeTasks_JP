@@ -1,6 +1,6 @@
 package com.telran.prof.hometask.htaskArrayInteger;
 
-import com.telran.prof.hometask.IteratorListiterator.IntegerNext;
+
 
 import java.util.ArrayList;
 import java.util.Iterator;

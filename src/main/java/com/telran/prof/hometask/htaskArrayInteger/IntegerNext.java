@@ -2,7 +2,7 @@ package com.telran.prof.hometask.htaskArrayInteger;
 
 import java.util.Iterator;
 
-public class IntegerNext {
+public class IntegerNext<I extends Number> {
     private Integer[] tools;
 
     public IntegerNext(Integer[] tools) {
