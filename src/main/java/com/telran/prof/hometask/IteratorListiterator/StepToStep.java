@@ -1,9 +1,10 @@
 package com.telran.prof.hometask.IteratorListiterator;
 
 import java.util.Iterator;
+import java.util.ListIterator;
 
 
-public class StepToStep implements Iterator<Integer> {
+abstract class StepToStep implements ListIterator<Integer> {
     int cursor;
     private Integer[] particle;
 
@@ -12,10 +13,6 @@ public class StepToStep implements Iterator<Integer> {
     }
 
     public StepToStep() {
-    }
-
-    public Iterator<Integer> iterator() {
-        return new StepToStep();
     }
 
     @Override

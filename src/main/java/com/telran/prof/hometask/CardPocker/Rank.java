@@ -1,4 +1,4 @@
-package com.telran.prof.hometask.cardGameOchko;
+package com.telran.prof.hometask.CardPocker;
 
 public enum Rank {
     TWO,

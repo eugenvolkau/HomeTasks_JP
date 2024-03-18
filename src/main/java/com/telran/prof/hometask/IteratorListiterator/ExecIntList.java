@@ -20,7 +20,7 @@ public class ExecIntList {
 
         int temp;
         long timeStart = System.currentTimeMillis();
-        for (int i = 0; i <= 10000000; i++) {
+        for (int i = 0; i <= 100; i++) {
             temp = i;
             list.add(temp);
             System.out.println("temp or ID    :" + temp);
@@ -123,7 +123,7 @@ public class ExecIntList {
 
 //    7th loop
 
-        ListIterator<Integer> listIterator1 = list.listIterator();
+        ListIterator<Integer> stepToStep = list.listIterator();
         timeStart = System.currentTimeMillis();
         //System.out.println(list);
         while (listIterator.hasPrevious()) {
