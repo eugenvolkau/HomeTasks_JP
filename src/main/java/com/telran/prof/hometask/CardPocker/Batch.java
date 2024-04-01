@@ -1,13 +1,10 @@
 package com.telran.prof.hometask.CardPocker;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 
 public class Batch {
-    List<Rank> ranks = Arrays.asList(Rank.values());
-    List<Suits> suits = Arrays.asList(Suits.values());
+   private List<Rank> ranks = Arrays.asList(Rank.values());
+    private List<Suits> suits = Arrays.asList(Suits.values());
     public List<String> deckTemp;
 
     public List<Rank> getRanks() {
@@ -20,7 +17,7 @@ public class Batch {
 
     public Batch() {
 
-        deckTemp = new ArrayList<>(lotOfCards());
+        deckTemp = new ArrayList<>(getlotOfCards());
     }
 
     public List<String> getDeckTemp() {
@@ -29,7 +26,7 @@ public class Batch {
 
     final Random random = new Random();
 
-    public List<String> lotOfCards() {
+    public List<String> getlotOfCards() {
 
         List<String> deckTemp = new ArrayList<>();
 
@@ -39,6 +36,7 @@ public class Batch {
             }
         }
         int a = ranks.size() * suits.size();
+        Stack deckSteck = new Stack();
         // deck shuffling
         for (int i = 0; i < a; i++) {
             int card = i + (random.nextInt(0, a - i));

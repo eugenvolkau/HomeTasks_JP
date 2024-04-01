@@ -5,6 +5,8 @@ import java.util.*;
 import java.util.ListIterator;
 
 public class ExecIntList {
+
+
     private static int goodScan() {
         Scanner sc = new Scanner(System.in);
         if (!sc.hasNextInt())
@@ -123,7 +125,7 @@ public class ExecIntList {
 
 //    7th loop
 
-        ListIterator<Integer> stepToStep = list.listIterator();
+       //ListIterator<Integer> stepToStep = list.listIterator();
         timeStart = System.currentTimeMillis();
         //System.out.println(list);
         while (listIterator.hasPrevious()) {

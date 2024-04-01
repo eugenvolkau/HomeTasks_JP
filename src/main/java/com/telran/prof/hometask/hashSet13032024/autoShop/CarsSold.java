@@ -4,24 +4,24 @@ import java.util.Objects;
 
 public class CarsSold {
 
-    private Enum Mark;
+    private Enum mark;
     private Enum color;
     final private String vinCode;
     private String registrNumber;
 
     public CarsSold(CarMark mark, Enum color, String vinCode, String registrNumber) {
-        this.Mark = mark;
+        this.mark = mark;
         this.color = color;
         this.vinCode = vinCode;
         this.registrNumber = registrNumber;
     }
 
     public Enum getMark() {
-        return Mark;
+        return mark;
     }
 
     public void setMark(Enum mark) {
-        Mark = mark;
+        this.mark = mark;
     }
 
     public Enum getColor() {
@@ -63,7 +63,7 @@ public class CarsSold {
     @Override
     public String toString() {
         return "CarsSold{" +
-                "Mark='" + Mark + '\'' +
+                "Mark='" + mark + '\'' +
                 ", color=" + color +
                 ", vinCode='" + vinCode + '\'' +
                 ", registrNumber='" + registrNumber + '\'' +

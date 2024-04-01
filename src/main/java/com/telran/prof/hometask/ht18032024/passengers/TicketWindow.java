@@ -8,8 +8,7 @@ import java.util.PriorityQueue;
 public class TicketWindow {
 
     public static void main(String[] args) {
-//
-//        PassengerQueue<Passenger> psg=new PassengerQueue<>()
+
         List<Passenger> psg = Arrays.asList(
                 new Passenger(2, "Smith"),
                 new Passenger(3, "Korleone"),

@@ -8,6 +8,7 @@ import java.util.Set;
 public class CarMonitoring {
 
     public static void main(String[] args) {
+
         CarsSold car1 = new CarsSold(CarMark.TRABANT, CarColor.ROSE,
                 "TRabant1990", "SHG541SK");
         CarsSold car2 = new CarsSold(CarMark.GAZ, CarColor.GRAYMETALLIC,

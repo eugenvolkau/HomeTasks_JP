@@ -8,5 +8,5 @@ public enum CarMark {
     PACKARD,
     SAAB,
     TATRA,
-    TALBOT
+    TALBOT;
 }
