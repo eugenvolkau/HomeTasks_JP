@@ -112,11 +112,11 @@ public class ExeQuetion implements NeueAdeQue {
         }
 
         public Integer next() {
+
             if (elements[head] == null) {
                 System.out.println(" this is the end ");
                 System.exit(0);
             }
-
             cursor = inc(lastRet = cursor, elements.length);
             return elements[head++];
         }
