@@ -15,8 +15,16 @@ public class SerpentToDoc {
         for (int j = 0; j < 17; j++) {
 
             for (int i = 1; i < 17; i++) {
-                System.out.println("Visit N " + i + " " + termin.terminPick(i));
-            }
+                if (!visits.containsKey(termin.terminPick(i))) {
+                    System.out.println("N " + i + " " + termin.terminPick
+                    (i));
+
+                } else {
+                    System.out.println("N " + i + "The time has already been " +
+                            "reserved.");
+                                 }
+//                System.out.println("Visit N " + i + " " + termin.terminPick(i));
+           }
             System.out.println("Enter the number of the visit ");
             int num = goodScan();
 
