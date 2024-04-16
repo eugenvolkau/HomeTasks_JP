@@ -33,9 +33,11 @@ public class CarMonitoring {
         System.out.println(car1 + "\n" + car2 + "\n" + car3 + "\n" + car4 +
                 "\n" + car5 + "\n" + car6 + "\n");
 
-        car1 = new CarsSold(CarMark.TRABANT, CarColor.KHAKI, "TRabant1990", "JK999S");
-
-        car2 = new CarsSold(CarMark.GAZ, CarColor.VIOLET, "GAZ1955", "CHS1910");
+        System.out.println("car1 & car2 cars were repainted and registration plates were changed");
+        car1.setColor(CarColor.RED);
+        car1.setRegistrNumber("JK999S");
+        car2.setColor(CarColor.VIOLET);
+       car2.setRegistrNumber("CHS1910");
 
         System.out.println("Soldet cars  as of today  :  \n");
         System.out.println(car1 + "\n" + car2 + "\n" + car3 + "\n" + car4 +

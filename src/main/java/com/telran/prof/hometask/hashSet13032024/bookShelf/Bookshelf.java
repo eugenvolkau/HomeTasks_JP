@@ -2,10 +2,10 @@ package com.telran.prof.hometask.hashSet13032024.bookShelf;
 
 public class Bookshelf {
 
-    private String bookTitle;
-    private int yearOfPublish;
-    private int numberOfPages;
-    private Author autor;
+    public String bookTitle;
+    public int yearOfPublish;
+    public int numberOfPages;
+    public Author autor;
 
     public Bookshelf(String bookTitle, int yearOfPublish, int numberOfPages,
                      Author autor) {
