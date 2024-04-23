@@ -1,17 +1,31 @@
-package com.telran.prof.hometask.setsHT11032024.cityGame;
+package com.telran.prof.hometask.inOutPut15042024.NewVasjuki;
 
-import java.util.HashSet;
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.*;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class CityNames {
 
     public static void main(String[] args) {
+        CityInZip beginig = new CityInZip();
+
+        System.out.println("A new game?                -  1 ");
+        System.out.println("Continue the old game?     -  2 ");
+        beginig.newChoice();
+        List<HashSet> names4321 = beginig.reservoirs();
+
+        CityOutZip vasjukiOut = new CityOutZip();
+        ChoiceScript choiceScript = new ChoiceScript();
 
         boolean test = true;
-        HashSet<String> names1 = new HashSet<>();
-        HashSet<String> names2 = new HashSet<>();
-        HashSet<String> names3 = new HashSet<>();
-        HashSet<String> names4 = new HashSet<>();
+        HashSet<String> names1 = names4321.get(0);
+        HashSet<String> names2 = names4321.get(1);
+        HashSet<String> names3 = names4321.get(2);
+        HashSet<String> names4 = names4321.get(3);
         HashSet<String> names5 = new HashSet<>();
         while (test) {
             System.out.println("Enter the name of the city");
@@ -23,19 +37,22 @@ public class CityNames {
             if (!names5.isEmpty()) {
                 for (String element : names1) {
                     System.out.println("unique titles  " + element);
+//                continue;
                 }
-//                System.out.println("listed twice  " + names2);
-//                System.out.println("thrice indicated" + names3);
-//                System.out.println("mentioned four times   " + names4);
                 System.out.println("indicated five times   " + names5);
                 System.out.println("This is a fiasco Karl!");
                 test = false;
             }
-            System.out.println("Continue? press - 1      Exit?  press  - 2");
+            List<HashSet> names1234 = Arrays.asList(names1, names2, names3,
+                    names4);
+            System.out.println("Continue? press - 1      Exit without saving?  " +
+                    "press  - 2    Exit and save?   -  press  -3");
+            test = choiceScript.setChoice(names1234);
         }
     }
 }
-  //  Мини игра:
+
+//  Мини игра:
 //         С консоли два игрока , по очереди вводят название городов.
 //         Каждое введенное название города нужно запомнить в структуре данных.
 //         Но запоминать нужно не как строку, а как объект класса City, который

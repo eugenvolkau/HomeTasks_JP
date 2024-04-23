@@ -4,13 +4,9 @@ import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import static java.util.Arrays.*;
-
 public class ClientSearch {
 
     public static void main(String[] args) {
-
-
         Client peter = new Client("0000001", "Peter", 22);
         peter.addPhone(11223344, NofeletTyp.MOBILE);
         peter.addPhone(22334455, NofeletTyp.LANDLINEPHONE);
@@ -29,15 +25,21 @@ public class ClientSearch {
         jack.addPhone(88990011, NofeletTyp.MOBILE);
         jack.addPhone(99001122, NofeletTyp.MOBILE);
 
-        Optional<Map.Entry<Integer, NofeletTyp>> phone = Stream.
-                of(peter, harry, jack, karl)
-                .sorted((s1,s2) -> s1.getAge()- s2.getAge())
-                .map(abonent -> abonent.getPhone())
-                .flatMap(phones -> phones.entrySet().stream())
-                .filter(x -> NofeletTyp.LANDLINEPHONE.equals(x.getValue()))
-                .findFirst();
+//        Optional<Map.Entry<Integer, NofeletTyp>> phone =
+//                Stream.of(peter, harry, jack, karl)
+//                .sorted((s1,s2) -> s2.getAge()- s1.getAge())
+//                .map(abonent -> abonent.getPhone())
+//                .flatMap(phones -> phones.entrySet().stream())
+//                .filter(x -> NofeletTyp.LANDLINEPHONE.equals(x.getValue()))
+//               .findFirst();
 
+        List<Client> oldAbonent = Arrays.asList(peter, harry, jack, karl);
+        Stream<Object> oldMan= oldAbonent.stream()
+                .filter(x->NofeletTyp.LANDLINEPHONE.equals(x.getPhones().values()))
+//               .map(Client::getAge)
+                .map(abonent-> abonent.getAge());
+                //.max((x1,x2) -> gcompareTo());
+        System.out.println(oldMan);
 
-        System.out.println(phone);
     }
 }

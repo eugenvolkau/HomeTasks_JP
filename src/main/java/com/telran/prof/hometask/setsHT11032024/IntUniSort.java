@@ -23,5 +23,6 @@ public class IntUniSort {
             if (!duplicatSet.contains(value)) {
                 System.out.println("Unique element  :" + value);
             }
+
     }
 }
