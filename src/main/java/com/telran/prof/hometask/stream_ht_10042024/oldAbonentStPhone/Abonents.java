@@ -2,13 +2,14 @@ package com.telran.prof.hometask.stream_ht_10042024.oldAbonentStPhone;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class Abonents {
 
     private int id;
     private String name;
     private int age;
-    private Integer phones;
+   // public Integer phones;
     private List<Phones> phonesOfAbonents;
 
 
@@ -18,14 +19,13 @@ public class Abonents {
         this.age = age;
     }
 
+
     public Abonents(int id) {
         this.id = id;
         name = name;
         this.age = age;
     }
 
-    public Abonents() {
-    }
 
     public void addPhone(Phones phone) {
         if (this.phonesOfAbonents == null) {
@@ -34,9 +34,6 @@ public class Abonents {
         this.phonesOfAbonents.add(phone);
     }
 
-    public Integer getPhones() {
-        return phones;
-    }
 
     public List<Phones> getPhonesOfAbonents() {
         return phonesOfAbonents;
