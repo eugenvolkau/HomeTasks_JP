@@ -1,14 +1,14 @@
 package com.telran.prof.hometask.hashSet13032024.bookShelf;
 
-public class Bookshelf {
+public class Books {
 
     public String bookTitle;
     public int yearOfPublish;
     public int numberOfPages;
     public Author autor;
 
-    public Bookshelf(String bookTitle, int yearOfPublish, int numberOfPages,
-                     Author autor) {
+    public Books(String bookTitle, int yearOfPublish, int numberOfPages,
+                 Author autor) {
         this.bookTitle = bookTitle;
         this.yearOfPublish = yearOfPublish;
         this.numberOfPages = numberOfPages;
@@ -39,9 +39,14 @@ public class Bookshelf {
         this.numberOfPages = numberOfPages;
     }
 
+    public Books(Author autor) {
+        this.autor = autor;
+
+    }
+
     @Override
     public String toString() {
-        return "\n Bookshelf\n{" +
+        return "\n Books\n{" +
                 "bookTitle='" + bookTitle + '\'' +
                 ", yearOfPublish=" + yearOfPublish +
                 ", numberOfPages=" + numberOfPages +
