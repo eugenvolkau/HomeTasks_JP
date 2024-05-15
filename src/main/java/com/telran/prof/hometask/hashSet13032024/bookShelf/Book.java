@@ -1,18 +1,20 @@
 package com.telran.prof.hometask.hashSet13032024.bookShelf;
 
-public class Books {
+import java.util.Objects;
 
-    public String bookTitle;
-    public int yearOfPublish;
-    public int numberOfPages;
-    public Author autor;
+public class Book {
 
-    public Books(String bookTitle, int yearOfPublish, int numberOfPages,
-                 Author autor) {
+    private String bookTitle;
+    private int yearOfPublish;
+    private int numberOfPages;
+    private Author author;
+
+    Book(String bookTitle, int yearOfPublish, int numberOfPages,
+         Author author) {
         this.bookTitle = bookTitle;
         this.yearOfPublish = yearOfPublish;
         this.numberOfPages = numberOfPages;
-        this.autor = autor;
+        this.author = author;
     }
 
     public String getBookTitle() {
@@ -39,18 +41,32 @@ public class Books {
         this.numberOfPages = numberOfPages;
     }
 
-    public Books(Author autor) {
-        this.autor = autor;
+    public Author getAuthor() {
+        return author;
+    }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Book book = (Book) o;
+        return yearOfPublish == book.yearOfPublish && numberOfPages == book.numberOfPages && Objects.equals(bookTitle, book.bookTitle) && Objects.equals(author, book.author);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(bookTitle, yearOfPublish, numberOfPages, author);
     }
 
     @Override
     public String toString() {
-        return "\n Books\n{" +
+        return "Book{" +
                 "bookTitle='" + bookTitle + '\'' +
                 ", yearOfPublish=" + yearOfPublish +
                 ", numberOfPages=" + numberOfPages +
-                '}';
+                ", authorName= " + author.getName() +
+                "authorBirthYear= " + author.getYearOfBirth() + '}' + "\n"
+                ;
     }
 }
 
