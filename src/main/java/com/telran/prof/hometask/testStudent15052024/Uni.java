@@ -33,13 +33,14 @@ public class Uni {
         students.put(id, student);
 
     }
-
+// test 1 student exist,  test 2 student not exist
     public Student excludeStudent(int id) {
-        students.values();
-
-        System.out.println("Befor " + students.get(id));
+        if (!students.containsKey(id)) {
+            throw new NotFoundStudentInUni("Not found student with id " + id);
+        }
+        Student student = students.get(id);
         students.remove(id);
-        return students.get(id);
+        return student;
     }
 
     public List<Student> getAllStudents() {
@@ -51,7 +52,6 @@ public class Uni {
         List<Student> degreeBachelor = (students.values())
                 .stream().filter(d -> d.getDegree().equals(degree))
                 .collect(Collectors.toList());
-        // System.out.println("Bachelor  " + degreeBachelor);
         return degreeBachelor;
     }
 
@@ -72,7 +72,6 @@ public class Uni {
     public int getSumAgeAllStudents() {
         int sumAges = (int) (students.values())
                 .stream()
-                //.filter(d-> d.getDegree().equals(degree))
                 .mapToInt(a -> a.getAge())
                 .sum();
         return sumAges;

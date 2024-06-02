@@ -10,7 +10,7 @@ public class UniApp {
         Student givi = new Student(2, "Givi", 20, Degree.MASTER);
         Student kote = new Student(3, "Kote", 17, Degree.BACHELOR);
         Student vano = new Student(4, "Vano", 30, Degree.BACHELOR);
-        Student mamuka = new Student(5, "Mamuka", 25, Degree.MASTER);
+        Student mamuka = new Student(5, "Mamuka", 80, Degree.MASTER);
 
         students.addStudent(vaso);
         students.addStudent(givi);
@@ -30,6 +30,7 @@ public class UniApp {
         System.out.println(" Total age of students-Bachelors :" + students.getSumAgeAllStudentsDegree(Degree.BACHELOR));
         System.out.println(" Total age of all students-Masters :" + students.getSumAgeAllStudentsDegree(Degree.MASTER));
         System.out.println("Exclude Studen  : " + students.excludeStudent(3));
+        System.out.println("All students after Exclude " + students.getAllStudents());
         System.out.println("Average Age of students " + students.getAverageAgeStudents());
 
     }

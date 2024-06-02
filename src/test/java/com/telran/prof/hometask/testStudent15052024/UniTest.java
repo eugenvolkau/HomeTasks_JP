@@ -3,10 +3,10 @@ package com.telran.prof.hometask.testStudent15052024;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class UniTest {
-
 
     private Uni uni;
 
@@ -16,9 +16,6 @@ class UniTest {
         Student soso = new Student(1, "Soso", 55, Degree.BACHELOR);
         uni.addStudent(soso);
     }
-
-
-
 
     @Test
     public void addStudentWhenStudentNotExistsInUni() {
@@ -35,12 +32,13 @@ class UniTest {
     }
 
     @Test
-    void excludeStudent(int i) {
+    void excludeStudentWhenStudentExist () {
 
-//        Student valiko = new Student(2, "Valiko", 25, Degree.MASTER);
-//        uni.excludeStudent(1);
+//        Student valiko = new Student(2, "Valid", 25, Degree.MASTER);
+       Student student = uni.excludeStudent(1);
         int size = uni.getAllStudents().size();
-        assertEquals(null, uni.excludeStudent(1));
+        assertEquals(0, uni.getAllStudents().size());
+        assertEquals(1,student.getId());
     }
 
     @Test
@@ -50,11 +48,11 @@ class UniTest {
     }
 
     @Test
-    void GetAllStudentsDegree(Degree degree) {
-        Student valiko = new Student(2, "Valiko", 25, Degree.MASTER);
-        uni.addStudent(valiko);
+    void GetAllStudentsDegree() {
+       // Student valiko = new Student(2, "Valiko", 25, Degree.MASTER);
+        //uni.addStudent(valiko);
         int size = uni.getAllStudentsDegree(Degree.MASTER).size();
-        assertEquals(1, size);
+        assertEquals(0, size);
     }
 
     @Test
@@ -64,11 +62,12 @@ class UniTest {
     }
 
     @Test
-    void getCountStudentsDegree(Degree degree) {
-        Student valiko = new Student(2, "Valiko", 25, Degree.MASTER);
+    void getCountStudentsDegreeExist() {
+        Student valiko = new Student(2, "Valiko", 25, Degree.BACHELOR);
         uni.addStudent(valiko);
-        int size = uni.getAllStudentsDegree(Degree.MASTER).size();
-        assertEquals(1, size);
+        int countDegree =
+                (int) uni.getAllStudentsDegree(Degree.BACHELOR).stream().count();
+        assertEquals(2, countDegree);
     }
 
     @Test
@@ -80,11 +79,11 @@ class UniTest {
     }
 
     @Test
-    void getSumAgeAllStudentsDegree(Degree degree) {
-        Student valiko = new Student(2, "Valiko", 25, Degree.MASTER);
+    void getSumAgeAllStudentsDegree() {
+        Student valiko = new Student(2, "Valiko", 25, Degree.BACHELOR);
         uni.addStudent(valiko);
         int sum = uni.getSumAgeAllStudentsDegree(Degree.BACHELOR);
-        assertEquals(25, sum);
+        assertEquals(80, sum);
     }
 
     @Test
@@ -92,42 +91,5 @@ class UniTest {
         Student valiko = new Student(2, "Valiko", 25, Degree.MASTER);
         uni.addStudent(valiko);
         assertEquals(40, uni.getAverageAgeStudents());
-
-}
-
-    @Test
-    void addStudent() {
-    }
-
-    @Test
-    void testExcludeStudent() {
-    }
-
-    @Test
-    void testGetAllStudents() {
-    }
-
-    @Test
-    void testGetAllStudentsDegree() {
-    }
-
-    @Test
-    void testGetCountStudents() {
-    }
-
-    @Test
-    void testGetCountStudentsDegree() {
-    }
-
-    @Test
-    void testGetSumAgeAllStudents() {
-    }
-
-    @Test
-    void testGetSumAgeAllStudentsDegree() {
-    }
-
-    @Test
-    void testGetAverageAgeStudents() {
     }
 }
