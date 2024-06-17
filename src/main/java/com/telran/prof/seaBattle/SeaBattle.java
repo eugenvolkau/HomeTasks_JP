@@ -122,6 +122,8 @@ public class SeaBattle {
 
         System.out.printf("\nHint %d: \nRow %d -> %d ships\n" +
                 "Column %d -> %d ships\n", attempt, shoot[0] + 1, row, shoot[1] + 1, column);
+
+        System.out.println("gggggggggjjjjjjjjjjjjjjj");
     }
 
     public static void changeboard(int[] shoot, int[][] ships, int[][] board) {
