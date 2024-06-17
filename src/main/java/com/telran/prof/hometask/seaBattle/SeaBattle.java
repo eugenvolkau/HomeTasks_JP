@@ -1,4 +1,4 @@
-package com.telran.prof.seaBattle;
+package com.telran.prof.hometask.seaBattle;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -34,7 +34,8 @@ public class SeaBattle {
 
         } while (shotHit != 3);
 
-        System.out.println("\n\n\nBattleship Java game finished! You hit 3 ships in " + attempts + " attempts");
+        S.out.println("\n\n\nBattleship Java game finished! You hit 3 ships " +
+                "in " + attempts + " attempts");
         showBoard(board);
     }
 
@@ -99,7 +100,7 @@ public class SeaBattle {
     }
 
     public static boolean hit(int[] shoot, int[][] ships) {
-        for (int ship = 0; ship < ships.length; ship++) {
+        or (int ship = 0; ship < ships.length; ship++) {
             if (shoot[0] == ships[ship][0] && shoot[1] == ships[ship][1]) {
                 System.out.printf("You hit a ship located in (%d,%d)\n", shoot[0] + 1, shoot[1] + 1);
                 return true;
@@ -118,7 +119,7 @@ public class SeaBattle {
                 column++;
         }
 
-        System.out.printf("Hint %d: \nRow %d -> %d ships\n" +
+        System.out.printf("\n Hint %d: \nRow %d -> %d ships\n" +
                 "Column %d -> %d ships\n", attempt, shoot[0] + 1, row, shoot[1] + 1, column);
 
         System.out.println("gggggggggjjjjjjjjjjjjjjj");
