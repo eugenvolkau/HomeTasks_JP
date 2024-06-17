@@ -34,7 +34,7 @@ public class SeaBattle {
 
         } while (shotHit != 3);
 
-        S.out.println("\n\n\nBattleship Java game finished! You hit 3 ships " +
+        System.out.println("\n\n\nBattleship Java game finished! You hit 3 ships " +
                 "in " + attempts + " attempts");
         showBoard(board);
     }
@@ -100,7 +100,7 @@ public class SeaBattle {
     }
 
     public static boolean hit(int[] shoot, int[][] ships) {
-        or (int ship = 0; ship < ships.length; ship++) {
+        for (int ship = 0; ship < ships.length; ship++) {
             if (shoot[0] == ships[ship][0] && shoot[1] == ships[ship][1]) {
                 System.out.printf("You hit a ship located in (%d,%d)\n", shoot[0] + 1, shoot[1] + 1);
                 return true;
