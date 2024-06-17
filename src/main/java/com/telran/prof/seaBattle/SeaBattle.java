@@ -13,7 +13,7 @@ public class SeaBattle {
         int attempts = 0,
                 shotHit = 0;
 
-        initBoard(board);
+        initboard(board);
         initShips(ships);
 
         System.out.println();
@@ -38,7 +38,7 @@ public class SeaBattle {
         showBoard(board);
     }
 
-    public static void initBoard(int[][] board) {
+    public static void initboard(int[][] board) {
         for (int row = 0; row < 5; row++)
             for (int column = 0; column < 5; column++)
                 board[row][column] = -1;
@@ -65,21 +65,21 @@ public class SeaBattle {
 
     }
 
-    public static void initShips(int[][] ships) {
+    public static void initShips(int[][] boat) {
         Random random = new Random();
 
         for (int ship = 0; ship < 3; ship++) {
-            ships[ship][0] = random.nextInt(5);
-            ships[ship][1] = random.nextInt(5);
+            boat[ship][0] = random.nextInt(5);
+            boat[ship][1] = random.nextInt(5);
 
             //let's check if that shot was already tried
             //if it was, just finish the do...while when a new pair was randomly selected
             for (int last = 0; last < ship; last++) {
-                if ((ships[ship][0] == ships[last][0]) && (ships[ship][1] == ships[last][1]))
+                if ((boat[ship][0] == boat[last][0]) && (boat[ship][1] == boat[last][1]))
                     do {
-                        ships[ship][0] = random.nextInt(5);
-                        ships[ship][1] = random.nextInt(5);
-                    } while ((ships[ship][0] == ships[last][0]) && (ships[ship][1] == ships[last][1]));
+                        boat[ship][0] = random.nextInt(5);
+                        boat[ship][1] = random.nextInt(5);
+                    } while ((boat[ship][0] == boat[last][0]) && (boat[ship][1] == boat[last][1]));
             }
 
         }
@@ -99,7 +99,6 @@ public class SeaBattle {
     }
 
     public static boolean hit(int[] shoot, int[][] ships) {
-
         for (int ship = 0; ship < ships.length; ship++) {
             if (shoot[0] == ships[ship][0] && shoot[1] == ships[ship][1]) {
                 System.out.printf("You hit a ship located in (%d,%d)\n", shoot[0] + 1, shoot[1] + 1);
@@ -112,7 +111,6 @@ public class SeaBattle {
     public static void hint(int[] shoot, int[][] ships, int attempt) {
         int row = 0,
                 column = 0;
-
         for (int line = 0; line < ships.length; line++) {
             if (ships[line][0] == shoot[0])
                 row++;
@@ -120,7 +118,7 @@ public class SeaBattle {
                 column++;
         }
 
-        System.out.printf("\nHint %d: \nRow %d -> %d ships\n" +
+        System.out.printf("Hint %d: \nRow %d -> %d ships\n" +
                 "Column %d -> %d ships\n", attempt, shoot[0] + 1, row, shoot[1] + 1, column);
 
         System.out.println("gggggggggjjjjjjjjjjjjjjj");
