@@ -100,7 +100,7 @@ public class SeaBattle {
     }
 
     public static boolean hit(int[] shoot, int[][] ships) {
-        for (int ship = 0; ship < ships.length; ship++) {
+        for (int ship:ships) {
             if (shoot[0] == ships[ship][0] && shoot[1] == ships[ship][1]) {
                 System.out.printf("You hit a ship located in (%d,%d)\n", shoot[0] + 1, shoot[1] + 1);
                 return true;
@@ -112,14 +112,14 @@ public class SeaBattle {
     public static void hint(int[] shoot, int[][] ships, int attempt) {
         int row = 0,
                 column = 0;
-        for (int line = 0; line < ships.length; line++) {
+        for (int line:ships) {
             if (ships[line][0] == shoot[0])
                 row++;
             if (ships[line][1] == shoot[1])
                 column++;
         }
 
-        System.out.printf("\n Hint %d: \nRow %d -> %d ships\n" +
+        System.out.printf("\n Hint %d: \n Row %d -> %d ships \n " +
                 "Column %d -> %d ships\n", attempt, shoot[0] + 1, row, shoot[1] + 1, column);
 
         System.out.println("gggggggggjjjjjjjjjjjjjjj");
