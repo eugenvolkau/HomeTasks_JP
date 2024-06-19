@@ -17,6 +17,7 @@ public class Phonering {
         phone3.setName("Thatcher");
 
 
+
         phone1.receiveCall();
         System.out.println("Number   " + phone1.getNumber() + " Model " + phone1.getModel() + "    " +
                 "Weight  " + phone1.getWeight());

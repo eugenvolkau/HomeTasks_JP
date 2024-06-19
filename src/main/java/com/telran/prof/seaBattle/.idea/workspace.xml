@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9d828ec5-8aed-4d1c-9e3e-16cf479e362e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../hometask/depot13052024/Drink.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hometask/depot13052024/Eat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hometask/depot13052024/depot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hometask/eventProcessing29052024/Event.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hometask/eventProcessing29052024/EventCreator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hometask/eventProcessing29052024/EventState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hometask/eventProcessing29052024/FirewallEventListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hometask/htRegex29042024/RegexMatches.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../../pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hometask/CardPocker/PassAnusSolitar.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hometask/CardPocker/PassAnusSolitar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hometask/alfabet/ABChek.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hometask/alfabet/ABChek.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hometask/bookShelfSecond13052024/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hometask/bookShelfSecond13052024/Author.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hometask/bookShelfSecond13052024/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hometask/bookShelfSecond13052024/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hometask/bookShelfSecond13052024/BookShelf.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hometask/bookShelfSecond13052024/BookShelf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hometask/bookShelfSecond13052024/ShelfOfBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hometask/bookShelfSecond13052024/ShelfOfBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hometask/hashSet13032024/bookShelf/BookInspect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hometask/hashSet13032024/bookShelf/SortByAuthor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hometask/hashSet13032024/bookShelf/SortByTitle.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hometask/hashSet13032024/bookShelf/SortByTitle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hometask/hashSet13032024/bookShelf/SortByYearOfPublish.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hometask/hashSet13032024/bookShelf/SortByYearOfPublish.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hometask/hippodrom/HippApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hometask/hippodrom/HippApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hometask/hippodrom/ResultPrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hometask/hippodrom/ResultPrinter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hometask/inOutPut15042024/NewVasjuki/ChoiceScript.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hometask/inOutPut15042024/NewVasjuki/CityInZip.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hometask/inOutPut15042024/NewVasjuki/CityNames.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hometask/inOutPut15042024/NewVasjuki/CityOutZip.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hometask/inOutPut15042024/simpleVasyuki/CityInOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hometask/inOutPut15042024/simpleVasyuki/CityInOut.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hometask/phonelet/Phone.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hometask/phonelet/Phone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hometask/phonelet/Phonering.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hometask/phonelet/Phonering.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hometask/stream_ht_10042024/oldAbonentStPhone/AbonSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hometask/stream_ht_10042024/oldAbonentStPhone/AbonSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hometask/testStudent15052024/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hometask/testStudent15052024/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hometask/testStudent15052024/Uni.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hometask/testStudent15052024/Uni.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hometask/testStudent15052024/UniApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hometask/testStudent15052024/UniApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SeaBattle.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hometask/seaBattle/SeaBattle.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../../../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="2i03mPLn0Ko5tRy1mtCVZOUmLEf" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/eugen/JAVA_PRO/JavaHTask/homeTasks"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9d828ec5-8aed-4d1c-9e3e-16cf479e362e" name="Changes" comment="" />
+      <created>1718613825452</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1718613825452</updated>
+    </task>
+    <servers />
+  </component>
+</project>

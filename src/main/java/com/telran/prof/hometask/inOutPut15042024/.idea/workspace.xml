@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f8ed34da-4aea-4e3e-9ad9-eb720baa22cd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../htRegex29042024/RegexMatches.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CardPocker/PassAnusSolitar.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CardPocker/PassAnusSolitar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hashSet13032024/bookShelf/BookInspect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hashSet13032024/bookShelf/SortByAuthor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hashSet13032024/bookShelf/SortByTitle.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hashSet13032024/bookShelf/SortByTitle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hashSet13032024/bookShelf/SortByYearOfPublish.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hashSet13032024/bookShelf/SortByYearOfPublish.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simpleVasyuki/CityInOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/simpleVasyuki/CityInOut.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../phonelet/Phone.java" beforeDir="false" afterPath="$PROJECT_DIR$/../phonelet/Phone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../phonelet/Phonering.java" beforeDir="false" afterPath="$PROJECT_DIR$/../phonelet/Phonering.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../../../../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="2gXbpo0jTRRe95r6PlGALiJXtO9" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/eugen/JAVA_PRO/JavaHTask/homeTasks/src/main/java/com/telran/prof/hometask/inOutPut15042024"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f8ed34da-4aea-4e3e-9ad9-eb720baa22cd" name="Changes" comment="" />
+      <created>1715847054891</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1715847054891</updated>
+    </task>
+    <servers />
+  </component>
+</project>

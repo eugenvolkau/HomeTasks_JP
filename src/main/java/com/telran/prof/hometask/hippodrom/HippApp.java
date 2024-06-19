@@ -11,7 +11,7 @@ public class HippApp {
 
     public static void main(String[] args) {
 
-        int loopLength = 10001;
+        int loopLength = 10002;
 
         Random random = new Random();
 

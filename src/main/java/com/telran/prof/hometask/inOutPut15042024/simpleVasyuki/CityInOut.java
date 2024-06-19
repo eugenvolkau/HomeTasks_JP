@@ -14,15 +14,14 @@ public class CityInOut {
 
         Scanner choice = new Scanner(System.in);
         int sel = choice.nextInt();
-
-return sel;
+        return sel;
     }
 
-    public  void deleter() {
+    public void deleter() {
 
         File fileToDelete = new File(path + "/" + st);
         boolean delete = fileToDelete.delete();
-//        System.out.println("file from files is delete ? " + delete);
+
         System.out.println("Good luck! ");
 
     }

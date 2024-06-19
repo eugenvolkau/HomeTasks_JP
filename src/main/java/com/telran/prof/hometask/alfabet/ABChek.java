@@ -1,6 +1,8 @@
 package com.telran.prof.hometask.alfabet;
 
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Random;
 
 public class ABChek {
 

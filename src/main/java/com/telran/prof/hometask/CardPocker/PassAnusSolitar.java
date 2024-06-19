@@ -10,12 +10,7 @@ public class PassAnusSolitar {
     public static void main(String[] args) {
         Batch batch = new Batch();
         batch.getlotOfCards();
-//        Accomplices accomp = new Accomplices();
-//        final int cardsForPlayer = 5;
-//        int players;
 
-//        final int numberOfCards = batch.getSuits().size() * batch.getRanks().size();
-//        players = accomp.playaccomp(numberOfCards, cardsForPlayer);
         List<String> deck1;
         deck1 = batch.getDeckTemp();
         String str = deck1.get(1);

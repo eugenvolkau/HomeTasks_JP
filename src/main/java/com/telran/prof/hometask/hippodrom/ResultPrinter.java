@@ -28,6 +28,7 @@ public class ResultPrinter implements Runnable {
                 }
             }
         }
+        //redo sorting by the numeric part of the String
         Arrays.stream(result).
                 sorted().forEach(String -> System.out.println(String));
     }

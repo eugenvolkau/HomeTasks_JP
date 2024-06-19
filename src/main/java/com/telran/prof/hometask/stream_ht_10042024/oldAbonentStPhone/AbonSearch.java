@@ -31,7 +31,8 @@ public class AbonSearch {
 
         System.out.println(Objects.requireNonNull(abonents.stream()
                 .filter(cl -> cl.getPhonesOfAbonents().stream()
-                        .anyMatch(c ->PhoneType.LANDLINEPHONE.equals(c.getPhoneType())&&c.getPhone()!=0))
+                .anyMatch(c ->PhoneType.LANDLINEPHONE
+                .equals(c.getPhoneType())&&c.getPhone()!=0))
                 .max(new AgeComparator()   ).orElse(null)).toString());
 
 
