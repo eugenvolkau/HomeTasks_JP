@@ -34,10 +34,9 @@ public class WriterOfEvent extends Thread {
                     list1.stream().forEach(String -> System.out.println(String));
 
                     list.remove(0);
-                    System.out.println("Size of list = " + list.size());
                 } else {
-                    System.out.println("Consumer  -->");
-                    System.out.println("Check list. List is Emty");
+                    System.out.println("  ------>");
+
                     try {
                         list.wait();
                     } catch (InterruptedException e) {
