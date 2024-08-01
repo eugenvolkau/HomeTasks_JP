@@ -6,7 +6,7 @@ import java.util.List;
 
 public class WriterOfEvent extends Thread {
 
-    private List<List<String>> list;
+    private final List<List<String>> list;
 
     public WriterOfEvent(List<List<String>> list) {
         this.list = list;
@@ -16,11 +16,10 @@ public class WriterOfEvent extends Thread {
     public void run() {
         sleepNow(1);
         while (true) {
-
             synchronized (list) {
 
-                if (list.size() > 0) {
-                    List<String> s = list.get(0);
+                if (!list.isEmpty()) {
+                    List<String> s = list.getFirst();
 
                     System.out.println("incomen list  " + list + " -> " + EventCreator.eventCounter);
                     Iterator<String> itera = s.iterator();
@@ -31,9 +30,9 @@ public class WriterOfEvent extends Thread {
 
                         list1.add(sb.toString());
                     }
-                    list1.stream().forEach(String -> System.out.println(String));
+                    list1.stream().forEach(System.out::println);
 
-                    list.remove(0);
+                    list.removeFirst();
                 } else {
                     System.out.println("  ------>");
 
